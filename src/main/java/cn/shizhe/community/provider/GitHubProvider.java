@@ -24,9 +24,11 @@ public class GitHubProvider {
                 .build();
         try (Response response = client.newCall(request).execute()) {
             String string =  response.body().string();
+            //通过分隔得到access_token的值
             String[] split = string.split("&");
             String[] split1 = split[0].split("=");
             String accessToken = split1[1];
+            //返回access_token
             return accessToken;
         } catch (IOException e) {
             e.printStackTrace();

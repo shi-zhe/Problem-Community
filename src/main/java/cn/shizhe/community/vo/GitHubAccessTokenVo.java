@@ -1,5 +1,6 @@
 package cn.shizhe.community.vo;
 
+//github的access_token对象
 public class GitHubAccessTokenVo {
     private String client_id;
     private String client_secret;

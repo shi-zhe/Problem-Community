@@ -1,5 +1,6 @@
 package cn.shizhe.community.vo;
 
+//github登录成功后返回的对象
 public class GitHubUser {
     private String name;
     private Long id;
